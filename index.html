@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lukmana</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(7, 6, 6, 0.1);
+      }
+      .profile-info {
+        background: rgb(188, 226, 241);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .profile-info p {
+        margin: 5px 0;
+        font-size: 16px;
+      }
+      h3 {
+        margin-top: 20px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+      }
+      label {
+        font-weight: bold;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      button {
+        background: skyblue;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        margin-top: 40px;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: rgb(155, 202, 221);
+      }
+      input[type="radio"] {
+        width: auto;
+        display: inline-block;
+        margin-right: 5px;
+      }
+      input[type="checkbox"] {
+        width: auto;
+        display: inline-block;
+        margin-right: 5px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1533669955142-6a73332af4db?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Foto Profil"
+      />
+      <div class="profile-info">
+        <p><strong>Nama:</strong> Lukman Adiansyah</p>
+        <p><strong>NIM:</strong> 2211102111</p>
+        <p><strong>Asal Daerah:</strong> Purwokerto</p>
+      </div>
+
+      <h3>Formulir Pendaftaran</h3>
+      <form>
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="jurusan">Jurusan:</label>
+        <select id="jurusan" name="jurusan">
+          <option value="informatika">S1 Teknik Informatika</option>
+          <option value="elektro">S1 Rekayasa Perangkat Lunak</option>
+          <option value="sipil">S1 Sains Data</option>
+        </select>
+
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" rows="3"></textarea>
+
+        <label>Jenis Kelamin:</label><br />
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="laki" name="gender" value="Laki-laki" />
+        <label for="perempuan">Perempuan</label>
+        <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+        <br />
+
+        <input type="checkbox" id="syarat" name="syarat" required />
+        <label for="syarat">Saya menyetujui syarat dan ketentuan</label>
+
+        <button type="submit">KIRIM</button>
+      </form>
+    </div>
+  </body>
+</html>
